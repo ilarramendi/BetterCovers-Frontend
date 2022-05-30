@@ -1,0 +1,48 @@
+.imageSelectorContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    height: max-content;
+
+    img {
+        min-height: 300px;
+        height: 300px;
+        width: 200px;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: contain;
+        cursor: pointer;
+
+        &.selected {
+            width: 210px;
+            box-sizing: border-box;
+            min-height: 315px;
+            height: auto;
+            z-index: 100;
+        }
+    }
+
+    &.selectedRow {
+        z-index: 11;
+        background-color: rgba(99, 92, 92, 0.521);
+        border: 1px solid black;
+        border-width: 0 1px;
+
+        
+        img {
+            min-height: 330px;
+            height: 330px;
+            width: 220px;
+
+            &.selected {
+                width: 240px;
+                min-height: 357px;
+                margin-top: -25px;
+                padding: 0;
+                border: 1px solid red
+            }
+        }
+    }
+
+}

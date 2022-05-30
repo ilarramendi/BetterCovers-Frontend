@@ -1,0 +1,18 @@
+.horizontalContainer {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(25, 25, 36);
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 432px;
+        width: 100vw;
+        height: 360px;
+        background-color: rgba(52, 56, 61, 0.719);
+        border: 2px solid black;
+        border-width: 2px 0;
+    }
+
+}
